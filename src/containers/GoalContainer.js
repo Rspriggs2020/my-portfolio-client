@@ -12,12 +12,19 @@ class GoalContainer extends Component {
     }
 
     render(){
-
+        return (
+            <Container>
+            <GoalForm />
+            <Goal goals={this.props.goal} />
+            </Container>
+        )
     }
 }
 
 mapStateToProps = (state) => {
-    
+    return ({
+        goals: state.goalreducers.goals
+    })
 }
 
-export default GoalContainer;
+export default connect(mapStateToProps, { getGoals })(GoalContainer);
