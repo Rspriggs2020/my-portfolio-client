@@ -1,7 +1,7 @@
 export const getGoals = () => {
     return(dispatch) => {
         dispatch({ type: 'GET_GOALS'})
-        return fetch()    ///--> /api/goals?
+        return fetch('/api/goals')    ///--> /api/goals?
         .then(res => res.json())
         .then(goals => dispatch({
             type: 'FETCH_GOALS',
@@ -15,7 +15,7 @@ export const getGoals = () => {
 export const getGoalId = id => {
     return(dispatch) => {
         dispatch({ type: 'GET_GOALS'})
-        return fetch() ///-->`/api/goals/${id}
+        return fetch(`/api/goals/${id}`) ///-->`/api/goals/${id}
         .then(res => res.json())
         .then(goal => dispatch({
             type: 'FETCH_GOAL',
