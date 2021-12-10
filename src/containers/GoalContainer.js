@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
-import Goal from '../components/Goal'
-import GoalForm from '../components/GoalForm'
+import Goal from '../components/Goals/Goal'
+import GoalForm from '../components/Goals/GoalForm'
 import { getGoals } from '../actions/GoalActions'
 
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { deleteGoal } from '../actions/GoalActions'
+import { deleteGoal } from '../../actions/GoalActions'
 
 //display goal.id
 class Goal extends Component {
