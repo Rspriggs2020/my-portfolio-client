@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from 'react-redux'
 import { createGoal } from '../actions/GoalActions'
 
+//goal input form
 class GoalForm extends Component {
     constructor() {
         super();
