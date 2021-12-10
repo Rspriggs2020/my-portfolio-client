@@ -1,11 +1,11 @@
 import React from "react";
 
-const Footer = () => {
+const About = () => {
     return(
-        <div className="signature">
-            <h3>&copy; 2021 MyReactProject</h3>
+        <div className="About">
+            <p>aboot page</p>
         </div>
     )
 }
 
-export default Footer;
+export default About;
