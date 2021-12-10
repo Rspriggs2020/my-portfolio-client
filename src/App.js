@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './landing/NavBar'
 import Home from './landing/Home'
 import About from './landing/About'
+import Footer from './landing/Footer'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
             <Route exact path="/" element={<Home/>}/>
             <Route exact path="/about" element={<About/>}/>
           </Routes>
+          <Footer />
       </BrowserRouter>
     </div>
   );
