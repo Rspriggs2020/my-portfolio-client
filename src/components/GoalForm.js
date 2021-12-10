@@ -20,6 +20,11 @@ class GoalForm extends Component {
     }
 
     render(){
+        return (
+            <from>
+                
+            </from>
+        )
 
     }
 }
