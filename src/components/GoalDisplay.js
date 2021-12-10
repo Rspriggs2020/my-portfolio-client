@@ -1,7 +1,23 @@
 import React, { Component } from 'react';
+import Goal from './Goal'
 
 class GoalDisplay extends Component {
     render() {
+
+        const { goals } = this.props
+
+        const index = goal.map(goal => {
+            return (
+                <Goal key={goal.id} goal={goal} />
+            )
+        })
+
+        return (
+            <li>
+                <h1 className="goal-list">Goals:</h1>
+                {index}
+            </li>
+        )
 
     }
 }

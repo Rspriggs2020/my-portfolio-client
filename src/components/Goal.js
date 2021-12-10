@@ -15,6 +15,7 @@ class Goal extends Component {
             <div>
                 <h1>Goal: {goal.title}</h1>
                 <br>
+                </br>
                 Description: {goal.description}
                 <br>
                 </br>
