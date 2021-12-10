@@ -5,6 +5,7 @@ import Home from './landing/Home'
 import About from './landing/About'
 import Footer from './landing/Footer'
 import Contact from "./landing/Contact";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route exact path="/" element={<Home/>}/>
             <Route exact path="/about" element={<About/>}/>
             <Route exact path="/contact" element={<Contact/>}/>
+            <Route exact path="/projects" element={<Projects/>}/>
           </Routes>
           <Footer />
       </BrowserRouter>
