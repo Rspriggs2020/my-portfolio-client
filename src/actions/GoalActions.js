@@ -21,17 +21,32 @@ export const getGoalId = id => {
             type: 'FETCH_GOAL',
             payload: goal
         }))
-
+    }
 }
 //get id
 
-export const createGoal = () => {
-
+export const createGoal = (goalInput) => {  //post 
+    let data = {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(goalInput)
+    }
+    return dispatch => {
+        fetch('/api/goals', data)
+        .then(res => res.json())
+        .then(goal => dispatch({
+            type: 'CREATE_GOAL',
+            payload: goal
+        }))
+    }
 }
 
 //create goal
 
-export const deleteGoal = () => {
+export const deleteGoal = () => { //destroy
     
 }
 
