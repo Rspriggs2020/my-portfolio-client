@@ -81,9 +81,13 @@ class Projects extends Component {
 
     render(){
         return(
+            //toggle catgeories and tasks(?)
             <div className="display-projects">
-                
+                <Tabs browserTab={this.state.browserTab} onChange={(tabId) => this.setState({ browserTab: tabId})}>
+
+                </Tabs>
                 <p>project</p>
+                {this.toggleCategories}
             </div>
         )
     }
