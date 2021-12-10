@@ -1,10 +1,26 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { Button } from 'react-bootstrap';
+import GoalsContainer from '../../containers/GoalContainer'
 
 //cannot get react-mdl to work
 
 class Projects extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            browserTab: 0
+        }
+    }
+
+    toggleCategories() {
+        if(this.state.browserTab === 0)
+        return (
+            <div>
+                <GoalsContainer />
+            </div>
+        )
+    }
     render() {
         return (
             <div className='card-index'>

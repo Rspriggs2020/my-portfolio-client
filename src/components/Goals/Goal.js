@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteGoal } from '../../actions/GoalActions'
+import { Button } from 'react-bootstrap';
 
 //display goal.id
 class Goal extends Component {
@@ -28,4 +29,4 @@ class Goal extends Component {
     }
 }
 
-export default connect(null, { deleteGoal})(Goal);
+export default connect(null, { deleteGoal })(Goal);

@@ -13,10 +13,11 @@ class GoalContainer extends Component {
 
     render(){
         return (
-            <Container>
+            <div>
             <GoalForm />
             <Goal goals={this.props.goal} />
-            </Container>
+            </div>
+           
         )
     }
 }

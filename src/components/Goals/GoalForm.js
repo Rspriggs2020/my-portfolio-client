@@ -14,7 +14,7 @@ class GoalForm extends Component {
 
     handleChange = event => {
         this.setState({
-            [e.target.id]: e.target.value
+            [event.target.id]: event.target.value
         })
     }
 
