@@ -29,11 +29,23 @@ class GoalForm extends Component {
 
     render(){
         return (
-            <from>
-
-            </from>
+            <form className="new-goal" onSubmit={this.handleSubmit}>
+                <label className="goal-title">Title</label>
+                <input
+                id="title"
+                value={this.state.title}
+                onChange={(event) => this.handleChange(event)}
+                />
+                <br>
+                </br>
+                <label className="goal-description">Description</label>
+                <textarea
+                id="description"
+                value={this.state.description}
+                onChange={this.handleChange} 
+                />
+            </form>
         )
-
     }
 }
 
