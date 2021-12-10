@@ -5,13 +5,6 @@ body {
   background-color: #282828;
 }
 
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .navbar {
   padding-top: 15pt;
   padding-bottom: 15pt;
