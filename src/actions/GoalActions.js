@@ -46,8 +46,22 @@ export const createGoal = (goalInput) => {  //post
 
 //create goal
 
-export const deleteGoal = () => { //destroy
-    
+export const deleteGoal = (goal_id) => { //destroy
+    let data = {
+        method: 'DELETE',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }   
+    }
+    return dispatch => {
+        fetch(`/api/goals/${goal_id}`, data)
+        .then(res => res.json())
+        .then(goal => dispatch({
+            type: 'DELETE_GOAL',
+            payload: goal
+        }))
+    }
 }
 
 //delete goalwith id
