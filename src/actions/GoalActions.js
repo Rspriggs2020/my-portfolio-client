@@ -1,24 +1,13 @@
-//export const getGoals = () => {
-  //  return(dispatch) => {
-    //    dispatch({ type: 'GET_GOALS'})
-      //  return fetch("http://localhost:3000/goals")    ///--> /api/goals?
-       // .then(res => res.json())
-       // .then(goals => dispatch({
-         //   type: 'FETCH_GOALS',
-          //  payload: goals
-        //}))
-    //}
-
-//}
-
-import goalTodoReducer from "../reducers/GoalTodoReducer"
-
-export function fetchGoals() {
+export const fetchGoals = () => {
     return dispatch => {
-        fetch("http://localhost:3000/goals")
-        .then(res = res.json())
-        .then(goals => dispatch({ type: }))
+        fetch("http://localhost:3000/goals")    ///--> /api/goals?
+        .then(res => res.json())
+        .then(goals => dispatch({
+            type: 'FETCH_GOALS',
+            payload: goals
+        }))
     }
+
 }
 
 //get goal

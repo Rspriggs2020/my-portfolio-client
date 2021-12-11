@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import { connect } from 'react-redux';
 import Goal from '../components/Goals/Goal'
 import GoalForm from '../components/Goals/GoalForm'
-import { getGoals } from '../actions/GoalActions'
+import { fetchGoals } from '../actions/GoalActions'
 
 
 class GoalContainer extends Component {
 
     componentDidMount(){
-        this.props.getGoals()
+        this.props.fetchGoals()
     }
 
     render(){
@@ -24,8 +24,8 @@ class GoalContainer extends Component {
 
 const mapStateToProps = (state) => {
     return ({
-        goals: state.goalreducers.goals
+        goals: state.goalTodoReducers.goals
     })
 }
 
-export default connect(mapStateToProps, { getGoals })(GoalContainer);
+export default connect(mapStateToProps, { fetchGoals })(GoalContainer);
