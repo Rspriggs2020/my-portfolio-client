@@ -1,12 +1,31 @@
 //add toto
 
-export const createTodo = () => {
+export const createTodo = (todo, goal ) => {
+    let data = {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(todo)
+    }
+    return dispatch => {
+        fetch()  //fetch request route
+        .then(response = response.json())
+        .then(todo => {
+            let res = {todo, goal}
+            dispatch({
+                type: 'CREATE_TODO',
+                payload: res
+            })
+        })
+    }
 
 }
 
 //delete todo
 
 export const deleteTodo = () => {
-    
+
 }
 
