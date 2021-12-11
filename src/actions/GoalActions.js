@@ -12,10 +12,9 @@ export const fetchGoals = () => {
 
 //get goal
 
-export const getGoalId = id => {
-    return(dispatch) => {
-        dispatch({ type: 'GET_GOALS'})
-        return fetch("http://localhost:3000/goals") ///-->`/api/goals/${id}
+export const fetchGoalId = id => {
+    return dispatch => {
+        fetch("http:/localhost:3000/goals") ///-->`/api/goals/${id}
         .then(res => res.json())
         .then(goal => dispatch({
             type: 'FETCH_GOAL',

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
-import Goal from '../components/Goals/Goal'
+import GoalDisplay from "../components/Goals/GoalDisplay";
 import GoalForm from '../components/Goals/GoalForm'
 import { fetchGoals } from '../actions/GoalActions'
 
@@ -15,7 +15,7 @@ class GoalContainer extends Component {
         return (
             <div>
             <GoalForm />
-            <Goal goal={this.props.goal} />
+            <GoalDisplay goals={this.props.goals} />
             </div>
            
         )
@@ -24,7 +24,7 @@ class GoalContainer extends Component {
 
 const mapStateToProps = (state) => {
     return ({
-        goal: state.goalTodoReducers.goal
+        goals: state.goalTodoReducer.goals
     })
 }
 

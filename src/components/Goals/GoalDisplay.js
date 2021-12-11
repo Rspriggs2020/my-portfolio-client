@@ -6,7 +6,7 @@ class GoalDisplay extends Component {
 
         const { goals } = this.props
 
-        const index = goal.map(goal => {
+        const index = goals.map(goal => {
             return (
                 <Goal key={goal.id} goal={goal} />
             )
