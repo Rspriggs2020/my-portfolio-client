@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button, Form } from 'semantic-ui-react';
 import {Tabs, Tab} from 'react-bootstrap-tabs';
 import GoalsContainer from '../../containers/GoalContainer'
-import { CardActions, CardText, CardTitle } from 'react-mdl';
+import { Card, CardActions, CardText, CardTitle } from 'react-mdl';
 
 //cannot get react-mdl to work
 
