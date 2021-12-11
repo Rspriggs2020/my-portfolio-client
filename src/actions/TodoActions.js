@@ -10,7 +10,7 @@ export const createTodo = (todo, goal ) => {
         body: JSON.stringify(todo)
     }
     return dispatch => {
-        fetch()  //fetch request route
+        fetch()  //fetch request route, data
         .then(response = response.json())
         .then(todo => {
             let res = {todo, goal}
@@ -25,7 +25,26 @@ export const createTodo = (todo, goal ) => {
 
 //delete todo
 
-export const deleteTodo = () => {
+export const deleteTodo = ( todo, goal) => {
+    let data = {
+        method: 'DELETE',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(todo)
+    }
+    return dispatch => {
+        fetch()  //fetch request route, data
+        .then(response = response.json())
+        .then(todo => {
+            let res = {todo, goal}
+            dispatch({
+                type: 'DELETE_TODO',
+                payload: res
+            })
+        })
+    }
 
 }
 
