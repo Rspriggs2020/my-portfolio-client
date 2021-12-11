@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
 const mainReducer = combineReducers ({
-    goalReducer
+    goalTodoReducer
 })
 
 export default mainReducer;
