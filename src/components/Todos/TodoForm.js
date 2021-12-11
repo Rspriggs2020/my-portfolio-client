@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Button, Form } from 'semantic-ui-react'
 import { addTodo } from '../../actions/TodoActions'
 
 class TodoForm extends Component {
@@ -26,7 +27,19 @@ class TodoForm extends Component {
     }
 
     render() {
-
+        return(
+            <Form className="todo-form" onSubmit={(event) => this.handleSubmit(event)}>
+                <Form.Field>
+                    <label className="todo-title">What I Plan To Work On:</label>
+                    <input
+                        id="title"
+                        value={this.state.title}
+                        onChange={(event) => this.handleChange(event)}
+                    />
+                </Form.Field>
+                <Button type="submit" value="submit">Add</Button>
+            </Form>
+        )
     }
 }
 
