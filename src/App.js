@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import './App.css';
 import NavBar from './landing/NavBar'
 import Home from './landing/Home'
@@ -12,7 +12,6 @@ function App() {
     <div className="App">
         <NavBar />
           <Routes>
-            
             <Route exact path="/" element={<Home/>}/>
             <Route exact path="/about" element={<About/>}/>
             <Route exact path="/blogposts" element={<BlogPosts/>}/>

@@ -5,8 +5,6 @@ import {Tabs, Tab} from 'react-bootstrap-tabs';
 import GoalsContainer from '../../containers/GoalContainer'
 import { Card, CardActions, CardText, CardTitle } from 'react-mdl';
 
-//cannot get react-mdl to work
-
 class Projects extends Component {
     constructor(props){
         super(props);
@@ -15,90 +13,61 @@ class Projects extends Component {
         }
     }
 
-    toggleCategories(){
-        if(this.state.activeTab === 0){
-          return(
-            <div >
-              <GoalsContainer />
-            </div>
-          )
-        }else if(this.state.activeTab === 1){
-          return (
-              <div className="project-cards">
-                  <Card>
-                      <CardTitle name="CLI"></CardTitle>
-                      <CardText>
-                          CLI project
-                      </CardText>
-                      <CardActions border>
-                          <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
-                      </CardActions>
-                  </Card>
+    
+    render(){
+        return(
+            //toggle catgeories and tasks(?)
+            <div className="display-projects">
+             <div className='card-index'>
                 <div className="card">
                     CLI
                     <br>
                     </br>
                     <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
+                    <GoalsContainer />
                 </div>
-              </div>
-            )
-        }else if(this.state.activeTab === 2){
-            return (
-                <div className="project-card-2">
-                  <div className="card">
-                      CLI
-                      <br>
-                      </br>
-                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
-                  </div>
+                <br>
+                </br>
+                <br>
+                </br>
+                <div className="card">
+                    Sinatra
+                    <br>
+                    </br>
+                    <Button href="https://github.com/Rspriggs2020/sinatra_coffee_project" colored target="_blank">To Repo</Button>
                 </div>
-            )
-        }else if(this.state.activeTab === 3){
-            return (
-                <div className="project-card-3">
-                  <div className="card">
-                      CLI
-                      <br>
-                      </br>
-                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
-                  </div>
+                <br>
+                </br>
+                <br>
+                </br>
+                <div className="card">
+                    Rails
+                   <br>
+                   </br>
+                   <Button href="https://github.com/Rspriggs2020/hey_anime" colored target="_blank">To Repo</Button>
                 </div>
-            )
-        }else if(this.state.activeTab === 4){
-            return (
-                <div className="project-card-4">
-                  <div className="card">
-                      CLI
-                      <br>
-                      </br>
-                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
-                  </div>
+                <br>
+                </br>
+                <br>
+                </br>
+                <div className="card">
+                    Javascript 
+                    <br>
+                    </br>
+                    <Button href="https://github.com/Rspriggs2020/spacedout_frontend" colored target="_blank">To Repo</Button>
                 </div>
-            )
-        }else if(this.state.activeTab === 5){
-            return (
-                <div className="project-card-5">
-                  <div className="card">
-                      CLI
-                      <br>
-                      </br>
-                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
-                  </div>
+                <br>
+                </br>
+                <br>
+                </br>
+                <div className="card">
+                    React
+                    <br>
+                    </br>
+                    <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
                 </div>
-            )
-        }
-    }
-
-    render(){
-        return(
-            //toggle catgeories and tasks(?)
-            <div className="display-projects">
-            <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})}>
-                <Tab>
-
-                </Tab>
-
-               </Tabs>
+                    
+            </div>
                 <p>project</p>
                 {this.toggleCategories}
             </div>
