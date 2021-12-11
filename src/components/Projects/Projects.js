@@ -84,7 +84,9 @@ class Projects extends Component {
             //toggle catgeories and tasks(?)
             <div className="display-projects">
             <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})}>
-                
+                <Tab>
+
+                </Tab>
 
                </Tabs>
                 <p>project</p>
