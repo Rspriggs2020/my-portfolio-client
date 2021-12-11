@@ -10,18 +10,18 @@ class Projects extends Component {
     constructor(props){
         super(props);
         this.statestate = {
-            browserTab: 0
+            activeTab: 0
         }
     }
 
     toggleCategories(){
-        if(this.state.browserTab === 0){
+        if(this.state.activeTab === 0){
           return(
             <div >
               <GoalsContainer />
             </div>
           )
-        }else if(this.state.browserTab === 1){
+        }else if(this.state.activeTab === 1){
           return (
               <div className="project-card-1">
                 <div className="card">
@@ -32,7 +32,7 @@ class Projects extends Component {
                 </div>
               </div>
             )
-        }else if(this.state.browserTab === 2){
+        }else if(this.state.activeTab === 2){
             return (
                 <div className="project-card-2">
                   <div className="card">
@@ -43,7 +43,7 @@ class Projects extends Component {
                   </div>
                 </div>
             )
-        }else if(this.state.browserTab === 3){
+        }else if(this.state.activeTab === 3){
             return (
                 <div className="project-card-3">
                   <div className="card">
@@ -54,7 +54,7 @@ class Projects extends Component {
                   </div>
                 </div>
             )
-        }else if(this.state.browserTab === 4){
+        }else if(this.state.activeTab === 4){
             return (
                 <div className="project-card-4">
                   <div className="card">
@@ -65,7 +65,7 @@ class Projects extends Component {
                   </div>
                 </div>
             )
-        }else if(this.state.browserTab === 5){
+        }else if(this.state.activeTab === 5){
             return (
                 <div className="project-card-5">
                   <div className="card">
@@ -83,9 +83,10 @@ class Projects extends Component {
         return(
             //toggle catgeories and tasks(?)
             <div className="display-projects">
-                <Tabs browserTab={this.state.browserTab} onChange={(tabId) => this.setState({ browserTab: tabId})}>
+            <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})}>
+                
 
-                </Tabs>
+               </Tabs>
                 <p>project</p>
                 {this.toggleCategories}
             </div>
@@ -95,3 +96,4 @@ class Projects extends Component {
 }
 
 export default Projects;
+//</div>browserTab={this.state.browserTab} onChange={(tabId) => this.setState({ browserTab: tabId})}>
