@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import { Button } from 'react-bootstrap';
+import { Button, Form } from 'semantic-ui-react';
 import {Tabs, Tab} from 'react-bootstrap-tabs';
 import GoalsContainer from '../../containers/GoalContainer'
+import { CardActions, CardText, CardTitle } from 'react-mdl';
 
 //cannot get react-mdl to work
 
@@ -21,9 +22,18 @@ class Projects extends Component {
               <GoalsContainer />
             </div>
           )
-        }else if(this.state.activeTab === 0){
+        }else if(this.state.activeTab === 1){
           return (
-              <div className="project-card-1">
+              <div className="project-cards">
+                  <Card>
+                      <CardTitle name="CLI"></CardTitle>
+                      <CardText>
+                          CLI project
+                      </CardText>
+                      <CardActions border>
+                          <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
+                      </CardActions>
+                  </Card>
                 <div className="card">
                     CLI
                     <br>
@@ -32,7 +42,7 @@ class Projects extends Component {
                 </div>
               </div>
             )
-        }else if(this.state.activeTab === 0){
+        }else if(this.state.activeTab === 2){
             return (
                 <div className="project-card-2">
                   <div className="card">
@@ -43,7 +53,7 @@ class Projects extends Component {
                   </div>
                 </div>
             )
-        }else if(this.state.activeTab === 0){
+        }else if(this.state.activeTab === 3){
             return (
                 <div className="project-card-3">
                   <div className="card">
@@ -54,7 +64,7 @@ class Projects extends Component {
                   </div>
                 </div>
             )
-        }else if(this.state.activeTab === 0){
+        }else if(this.state.activeTab === 4){
             return (
                 <div className="project-card-4">
                   <div className="card">
@@ -65,7 +75,7 @@ class Projects extends Component {
                   </div>
                 </div>
             )
-        }else if(this.state.activeTab === 0){
+        }else if(this.state.activeTab === 5){
             return (
                 <div className="project-card-5">
                   <div className="card">
