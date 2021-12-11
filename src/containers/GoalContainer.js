@@ -15,7 +15,7 @@ class GoalContainer extends Component {
         return (
             <div>
             <GoalForm />
-            <Goal goals={this.props.goal} />
+            <Goal goal={this.props.goal} />
             </div>
            
         )
@@ -24,7 +24,7 @@ class GoalContainer extends Component {
 
 const mapStateToProps = (state) => {
     return ({
-        goals: state.goalTodoReducers.goals
+        goal: state.goalTodoReducers.goal
     })
 }
 
