@@ -18,8 +18,10 @@ export default function goalTodoReducer(state = {
             return {...state, 
                 goals: [...state.goals.filter(x => x.id !== action.payload.goal.id).concat(goalTodo)]}
         case 'DELETE_TODOS':
-            case 'FETCH_TODOS':
-            return {...state, todos: action.payload.todos}
+            goalTodo = {...action.payload.goal, todos: action.payload.goal.todos.filter(i => i.id !== action.payload.todo.id)}
+            return {...state, 
+                goals: [...state.goals.filter(x => x.id !== action.payload.goal.id).concat(goalTodo)]}
+
         default:
         return state;
     } 
