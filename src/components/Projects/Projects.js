@@ -9,7 +9,7 @@ import GoalsContainer from '../../containers/GoalContainer'
 class Projects extends Component {
     constructor(props){
         super(props);
-        this.statestate = {
+        this.state = {
             activeTab: 0
         }
     }
