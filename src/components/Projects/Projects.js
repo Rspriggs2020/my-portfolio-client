@@ -21,7 +21,7 @@ class Projects extends Component {
               <GoalsContainer />
             </div>
           )
-        }else if(this.state.activeTab === 1){
+        }else if(this.state.activeTab === 0){
           return (
               <div className="project-card-1">
                 <div className="card">
@@ -32,7 +32,7 @@ class Projects extends Component {
                 </div>
               </div>
             )
-        }else if(this.state.activeTab === 2){
+        }else if(this.state.activeTab === 0){
             return (
                 <div className="project-card-2">
                   <div className="card">
@@ -43,7 +43,7 @@ class Projects extends Component {
                   </div>
                 </div>
             )
-        }else if(this.state.activeTab === 3){
+        }else if(this.state.activeTab === 0){
             return (
                 <div className="project-card-3">
                   <div className="card">
@@ -54,7 +54,7 @@ class Projects extends Component {
                   </div>
                 </div>
             )
-        }else if(this.state.activeTab === 4){
+        }else if(this.state.activeTab === 0){
             return (
                 <div className="project-card-4">
                   <div className="card">
@@ -65,7 +65,7 @@ class Projects extends Component {
                   </div>
                 </div>
             )
-        }else if(this.state.activeTab === 5){
+        }else if(this.state.activeTab === 0){
             return (
                 <div className="project-card-5">
                   <div className="card">
