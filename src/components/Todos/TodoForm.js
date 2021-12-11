@@ -11,17 +11,23 @@ class TodoForm extends Component {
         }
     }
 
-    handleChange = () => {
-
+    handleChange = (event) => {
+        this.setState({
+            title: event.target.value
+        })
     }
 
-    handleSubmit = () => {
-
+    handleSubmit = (event) => {
+        event.preventDefault();
+        this.props.addTodo({title: this.state.title}, this.props.goal)
+        this.setState({
+            title: ''
+        })
     }
-    
+
     render() {
 
     }
 }
 
-export default TodoForm;
+export default connect(null, { addTodo })(TodoForm);
