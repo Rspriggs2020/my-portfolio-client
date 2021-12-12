@@ -13,7 +13,7 @@ class TodoForm extends Component {
 
     handleChange = (event) => {
         this.setState({
-            title: event.target.value
+            project_title: event.target.value
         })
     }
 
@@ -32,12 +32,10 @@ class TodoForm extends Component {
                     <label className="todo-title">Future Plans:</label>
                     <input
                         placeholder="Ex.) Expand, Redesign."
-                        id="title"
+                        id="project_title"
                         value={this.state.project_title}
                         onChange={(event) => this.handleChange(event)}
                     />
-                    <br>
-                    </br>
                 </Form.Field>
                 <Button type="submit" value="submit">Add</Button>
             </Form>
