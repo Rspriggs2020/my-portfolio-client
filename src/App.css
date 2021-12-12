@@ -38,6 +38,10 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20pt;
   text-align: center;
+  padding-left: 50pt;
+  padding-right: 50pt;
+  padding-top: 50pt;
+  color:sandybrown;
 }
 
 .blog-page {
