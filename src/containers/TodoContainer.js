@@ -13,9 +13,10 @@ class TodoContainer extends Component {
     render(){
         return(
             <div>
-                <TodoForm goal={this.props.goal} />
+                <TodoForm  />
                 <h1>What I plan To Do:</h1>
                 <TodoDisplay 
+                goal={this.props.goal}
                 key={this.props.goal.id}
                 todos={this.props.goal.todos}
                 deleteTodo={this.props.deleteTodo}
