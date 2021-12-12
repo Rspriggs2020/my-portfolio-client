@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteGoal } from '../../actions/GoalActions'
 import { Button } from 'react-bootstrap';
-
+import { Card } from 'react-mdl';
 //display goal.id
 class Goal extends Component {
 
@@ -11,18 +11,18 @@ class Goal extends Component {
     }
 
     render() {
-
         const { goal}  = this.props
         return (
-            <div>
+            <Card>
+                <Card.Content>
                 <h1>Goal: {goal.title}</h1>
                 <br>
-                </br>
-                Description: {goal.description}
-                <br>
+                    Description: {goal.description}
                 </br>
                 <Button onClick={ () => this.handleClick() }>Delete Goal</Button>
-            </div>
+                </Card.Content>
+            </Card>
+    
 
         )
 

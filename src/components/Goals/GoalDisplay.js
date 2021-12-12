@@ -6,7 +6,7 @@ class GoalDisplay extends Component {
 
         const { goals } = this.props
 
-        const index = goals.map(goal => {
+        const goalIndex = goals.map(goal => {
             return (
                 <Goal key={goal.id} goal={goal} />
             )
@@ -15,7 +15,7 @@ class GoalDisplay extends Component {
         return (
             <li>
                 <h1 className="goal-list">Goals:</h1>
-                {index}
+                {goalIndex}
             </li>
         )
 
