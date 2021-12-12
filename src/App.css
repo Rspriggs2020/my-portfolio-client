@@ -86,12 +86,38 @@ body {
 
 .goals {
   display: inline-block;
-  padding-right: 20pt;
-  font-size: medium;
+  padding-right: 5pt;
+  font-size: 15pt;
+
 }
 .project-cards {
   display: inline-block;
 }
+
+.new-goal {
+  padding-top: 20pt;
+  font-size: 20pt;
+}
+
+input { 
+  padding-top: 20 pt;
+  border: 4px solid black;
+  border-radius: 4px;
+  padding: 8px 8px
+
+}
+
+textarea {
+  width: 50%;
+  height: 75px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 4px solid black;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
 
 
 

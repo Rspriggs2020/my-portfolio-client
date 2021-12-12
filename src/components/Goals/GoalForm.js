@@ -33,20 +33,26 @@ class GoalForm extends Component {
         return (
             <form className="new-goal" onSubmit={this.handleSubmit}>
                 <label className="goal-title" >Title</label>
+                <br></br>
+                <br></br>
                 <input
                 placeholder="Ex.) CLI, Sinatra, Rails"
                 id="title"
                 value={this.state.title}
                 onChange={(event) => this.handleChange(event)}
                 />
-                <br>
-                </br>
+                <br></br>
+                <br></br>
                 <label className="goal-description">Description</label>
+                <br></br>
+                <br></br>
                 <textarea
                 placeholder="Ex.) Add More Feautures"
                 id="description"
                 value={this.state.description}
                 onChange={this.handleChange} />
+                <br>
+                </br>
                 <Button type="submit">Add Goal</Button>
                
             </form>

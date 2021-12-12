@@ -15,10 +15,8 @@ class GoalContainer extends Component {
         return (
             <div>
                 <GoalForm />
-            <GoalDisplay goals={this.props.goals} />
-            
+                <GoalDisplay goals={this.props.goals} />
             </div>
-           
         )
     }
 }

@@ -13,7 +13,7 @@ class TodoContainer extends Component {
     render(){
         return(
             <div>
-                <TodoForm  />
+                <TodoForm goal={this.props.goal} />
                 <h1>What I plan To Do:</h1>
                 <TodoDisplay 
                 goal={this.props.goal}

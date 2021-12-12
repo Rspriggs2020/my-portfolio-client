@@ -13,10 +13,9 @@ class GoalDisplay extends Component {
         })
 
         return (
-            <li>
-                <h1 className="goal-list">My Goals:</h1>
+            <div>
                 {goalIndex}
-            </li>
+            </div>
         )
 
     }

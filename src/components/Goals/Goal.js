@@ -16,10 +16,9 @@ class Goal extends Component {
         return (
             <div className='goals'>
         
-                <h1>Goal: {goal.title}</h1>
-                <br>
-                </br>
-                <h2>Description: {goal.description}</h2>
+                Goal: {goal.title}
+                <br></br>
+                Description: {goal.description}
                 <br>
                 </br>
                 <Button onClick={ () => this.handleClick() }>Delete Goal</Button>
