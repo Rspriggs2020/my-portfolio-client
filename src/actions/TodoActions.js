@@ -10,13 +10,13 @@ export const createTodo = (todo, goal ) => {
         body: JSON.stringify(todo)
     }
     return dispatch => {
-        fetch(`/api/goals/${goal.id}/todos`, data)  //fetch request route, data
-        .then(response = response.json())
+        fetch(`/http://localhost:3000/goals/${goal.id}/todos`, data)  //fetch request route, data
+        .then(res = res.json())
         .then(todo => {
-            let res = {todo, goal}
+            let result = {todo, goal}
             dispatch({
-                type: 'CREATE_TODO',
-                payload: res
+                type: 'CREATE_TODOS',
+                payload: result
             })
         })
     }
@@ -35,13 +35,13 @@ export const deleteTodo = ( todo, goal) => {
         body: JSON.stringify(todo)
     }
     return dispatch => {
-        fetch(`/api/goals/${goal.id}/todos/${todo.id}`)  //fetch request route, data
-        .then(response = response.json())
+        fetch(`/http://localhost:3000/goals/${goal.id}/todos/${todo.id}`)  //fetch request route, data
+        .then(res = res.json())
         .then(todo => {
-            let res = {todo, goal}
+            let result = {todo, goal}
             dispatch({
-                type: 'DELETE_TODO',
-                payload: res
+                type: 'DELETE_TODOS',
+                payload: result
             })
         })
     }

@@ -1,6 +1,6 @@
 export const fetchGoals = () => {
     return dispatch => {
-        fetch("api/goals")    ///--> /api/goals?
+        fetch('http://localhost:3000/goals')    ///--> /api/goals?
         .then(res => res.json())
         .then(goals => dispatch({
             type: 'FETCH_GOALS',
@@ -14,7 +14,7 @@ export const fetchGoals = () => {
 
 export const fetchGoalId = id => {
     return dispatch => {
-        fetch(`/api/goals/${id}`) ///-->`/api/goals/${id}
+        fetch(`http://localhost:3000/goals/${id}`) ///-->`/api/goals/${id}
         .then(res => res.json())
         .then(goal => dispatch({
             type: 'FETCH_GOAL',
@@ -34,7 +34,7 @@ export const createGoal = (goalInput) => {  //post
         body: JSON.stringify(goalInput)
     }
     return dispatch => {
-        fetch("/api/goals", data)
+        fetch('http://localhost:3000/goals', data)
         .then(res => res.json())
         .then(goal => dispatch({
             type: 'CREATE_GOAL',
@@ -54,7 +54,7 @@ export const deleteGoal = (goal_id) => { //destroy
         }   
     }
     return dispatch => {
-        fetch(`/api/goals/${goal_id}`, data)
+        fetch(`http://localhost:3000/goals/${goal_id}`, data)
         .then(res => res.json())
         .then(goal => dispatch({
             type: 'DELETE_GOAL',
