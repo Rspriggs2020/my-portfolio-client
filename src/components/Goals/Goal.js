@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { deleteGoal } from '../../actions/GoalActions'
 import { Button } from 'react-bootstrap';
 import { Card } from 'react-mdl';
+import TodoContainer from '../../containers/TodoContainer'
 //display goal.id
 class Goal extends Component {
 
@@ -21,9 +22,12 @@ class Goal extends Component {
                 </br>
                 <Button onClick={ () => this.handleClick() }>Delete Goal</Button>
                 </Card.Content>
+                <br>
+                </br>
+                <Card.Content extra>
+                    <TodoContainer goal={goal} />
+                </Card.Content>
             </Card>
-    
-
         )
 
     }
