@@ -15,22 +15,18 @@ class Goal extends Component {
     render() {
         const { goal }  = this.props
         return (
-            <div>
-            <Card>
-
+            <div className='goals'>
+        
                 <h1>Goal: {goal.title}</h1>
                 <br>
                 </br>
                 <h2>Description: {goal.description}</h2>
                 <br>
                 </br>
-            
                 <Button onClick={ () => this.handleClick() }>Delete Goal</Button>
                 
-               
-                    <TodoContainer goal={goal} />
+                <TodoContainer goal={goal} />
                 
-            </Card>
             </div>
         )
 

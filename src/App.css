@@ -83,9 +83,14 @@ body {
   font-size: 30pt;
 }
 
+
+.goals {
+  display: inline-block;
+  padding-right: 20pt;
+  font-size: medium;
+}
 .project-cards {
-  padding-top: 80pt;
-  
+  display: inline-block;
 }
 
 

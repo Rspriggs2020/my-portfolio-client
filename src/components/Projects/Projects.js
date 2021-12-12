@@ -106,6 +106,7 @@ class Projects extends Component {
                     <Tab>JavaScript</Tab>
                     <Tab>React / Redux</Tab>
                 </Tabs>
+
                 {this.toggle()}
             </div>
         )
