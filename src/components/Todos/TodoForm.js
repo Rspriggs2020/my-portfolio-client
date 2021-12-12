@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Button, Form } from 'semantic-ui-react'
-import { addTodo } from '../../actions/TodoActions'
+import { createTodo } from '../../actions/TodoActions'
 
 class TodoForm extends Component {
     constructor(){
@@ -43,4 +43,4 @@ class TodoForm extends Component {
     }
 }
 
-export default connect(null, { addTodo })(TodoForm);
+export default connect(null, { createTodo })(TodoForm);
