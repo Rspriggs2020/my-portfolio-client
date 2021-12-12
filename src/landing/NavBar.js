@@ -12,6 +12,10 @@ const NavBar = () => {
                 Projects
             </Link>
 
+            <Link to="/goals" className="my-goals">
+                Goals
+            </Link>
+
             <Link to="/about" className="about-page">
                 About
             </Link>
@@ -19,6 +23,7 @@ const NavBar = () => {
             <Link to="/blogposts" className="blog-page">
                 Blogs
             </Link>
+
         </div>
     )
 }
