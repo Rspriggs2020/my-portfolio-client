@@ -34,7 +34,7 @@ export const createGoal = (goalInput) => {  //post
         body: JSON.stringify(goalInput)
     }
     return dispatch => {
-        fetch("http:/localhost:3000/goals", data)
+        fetch("http:/localhost:3000/goals/new", data)
         .then(res => res.json())
         .then(goal => dispatch({
             type: 'CREATE_GOAL',

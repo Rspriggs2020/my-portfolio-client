@@ -16,7 +16,7 @@ const NavBar = () => {
                 About
             </Link>
 
-            <Link to="/contact" className="blog-page">
+            <Link to="/blogposts" className="blog-page">
                 Blogs
             </Link>
         </div>

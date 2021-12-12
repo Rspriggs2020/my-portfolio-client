@@ -12,7 +12,7 @@ class Projects extends Component {
             activeTab: 0
         }
     }
-    toggleCategories(){
+    toggle(){
         if(this.state.activeTab === 0){
           return(
             <div >
@@ -104,7 +104,7 @@ class Projects extends Component {
                     <Tab>JavaScript</Tab>
                     <Tab>React / Redux</Tab>
                 </Tabs>
-                {this.toggleCategories()}
+                {this.toggle()}
             </div>
         )
     }
