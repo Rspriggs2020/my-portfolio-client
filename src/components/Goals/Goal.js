@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteGoal } from '../../actions/GoalActions'
 import { Button } from 'react-bootstrap';
-import { Card } from 'react-mdl';
+import { Card, Grid } from 'react-mdl';
 import TodoContainer from '../../containers/TodoContainer'
 //display goal.id
 class Goal extends Component {
@@ -12,7 +12,7 @@ class Goal extends Component {
     }
 
     render() {
-        const { goal}  = this.props
+        const { goal }  = this.props
         return (
             <Card>
                 <Card.Content>

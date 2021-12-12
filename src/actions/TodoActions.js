@@ -11,7 +11,7 @@ export const createTodo = (todo, goal ) => {
     }
     return dispatch => {
         fetch(`/http://localhost:3000/goals/${goal.id}/todos`, data)  //fetch request route, data
-        .then(res = res.json())
+        .then(res => res.json())
         .then(todo => {
             let result = {todo, goal}
             dispatch({
@@ -35,8 +35,8 @@ export const deleteTodo = ( todo, goal) => {
         body: JSON.stringify(todo)
     }
     return dispatch => {
-        fetch(`/http://localhost:3000/goals/${goal.id}/todos/${todo.id}`)  //fetch request route, data
-        .then(res = res.json())
+        fetch(`/http://localhost:3000/goals/${goal.id}/todos/${todo.id}`, data)  //fetch request route, data
+        .then(res => res.json())
         .then(todo => {
             let result = {todo, goal}
             dispatch({

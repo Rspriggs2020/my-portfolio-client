@@ -26,4 +26,4 @@ class TodoContainer extends Component {
     }
 }
 
-export default connect(null, { fetchGoalId })(TodoContainer);
+export default connect(null, { deleteTodo, fetchGoalId })(TodoContainer);
