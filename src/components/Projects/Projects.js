@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import GoalsContainer from '../../containers/GoalContainer'
+import 'react-mdl/extra/material.css';   
+import 'react-mdl/extra/material.js';
 import { Card, CardActions, CardText, CardTitle, Tab, Tabs, Grid, Cell } from 'react-mdl';
 
 class Projects extends Component {
