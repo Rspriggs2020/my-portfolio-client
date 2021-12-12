@@ -31,7 +31,7 @@ class TodoForm extends Component {
                 <Form.Field>
                     <label className="todo-title">Future Plans:</label>
                     <input
-                    placeholder='Ex.) Expand, Redesign..'
+                        placeholder="Ex.) Expand, Redesign."
                         id="title"
                         value={this.state.project_title}
                         onChange={(event) => this.handleChange(event)}
