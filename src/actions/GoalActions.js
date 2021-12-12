@@ -14,7 +14,7 @@ export const fetchGoals = () => {
 
 export const fetchGoalId = id => {
     return dispatch => {
-        fetch("http:/localhost:3000/goals") ///-->`/api/goals/${id}
+        fetch("http:/localhost:3000/api/goals") ///-->`/api/goals/${id}
         .then(res => res.json())
         .then(goal => dispatch({
             type: 'FETCH_GOAL',
@@ -34,7 +34,7 @@ export const createGoal = (goalInput) => {  //post
         body: JSON.stringify(goalInput)
     }
     return dispatch => {
-        fetch('/api/goals', data)
+        fetch("http:/localhost:3000/goals", data)
         .then(res => res.json())
         .then(goal => dispatch({
             type: 'CREATE_GOAL',

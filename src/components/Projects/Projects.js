@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import { Button, Form } from 'semantic-ui-react';
-import {Tabs, Tab} from 'react-bootstrap-tabs';
 import GoalsContainer from '../../containers/GoalContainer'
-import { Card, CardActions, CardText, CardTitle } from 'react-mdl';
+import { Card, CardActions, CardText, CardTitle, Tab, Tabs, Grid, Cell } from 'react-mdl';
 
 class Projects extends Component {
     constructor(props){
@@ -12,63 +10,92 @@ class Projects extends Component {
             activeTab: 0
         }
     }
-
-    
-    render(){
-        return(
-            //toggle catgeories and tasks(?)
-            <div className="display-projects">
-             <div className='card-index'>
+    toggleCategories(){
+        if(this.state.activeTab === 0){
+          return(
+            <div >
+              <GoalsContainer />
+            </div>
+          )
+        }else if(this.state.activeTab === 1){
+          return (
+              <div className="project-cards">
+                  <Card>
+                      <CardTitle name="CLI"></CardTitle>
+                      <CardText>
+                          CLI project
+                      </CardText>
+                      <CardActions border>
+                          <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
+                      </CardActions>
+                  </Card>
                 <div className="card">
                     CLI
                     <br>
                     </br>
                     <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
-                    <GoalsContainer />
                 </div>
-                <br>
-                </br>
-                <br>
-                </br>
-                <div className="card">
-                    Sinatra
-                    <br>
-                    </br>
-                    <Button href="https://github.com/Rspriggs2020/sinatra_coffee_project" colored target="_blank">To Repo</Button>
+              </div>
+            )
+        }else if(this.state.activeTab === 2){
+            return (
+                <div className="project-card-2">
+                  <div className="card">
+                      CLI
+                      <br>
+                      </br>
+                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
+                  </div>
                 </div>
-                <br>
-                </br>
-                <br>
-                </br>
-                <div className="card">
-                    Rails
-                   <br>
-                   </br>
-                   <Button href="https://github.com/Rspriggs2020/hey_anime" colored target="_blank">To Repo</Button>
+            )
+        }else if(this.state.activeTab === 3){
+            return (
+                <div className="project-card-3">
+                  <div className="card">
+                      CLI
+                      <br>
+                      </br>
+                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
+                  </div>
                 </div>
-                <br>
-                </br>
-                <br>
-                </br>
-                <div className="card">
-                    Javascript 
-                    <br>
-                    </br>
-                    <Button href="https://github.com/Rspriggs2020/spacedout_frontend" colored target="_blank">To Repo</Button>
+            )
+        }else if(this.state.activeTab === 4){
+            return (
+                <div className="project-card-4">
+                  <div className="card">
+                      CLI
+                      <br>
+                      </br>
+                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
+                  </div>
                 </div>
-                <br>
-                </br>
-                <br>
-                </br>
-                <div className="card">
-                    React
-                    <br>
-                    </br>
-                    <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
+            )
+        }else if(this.state.activeTab === 5){
+            return (
+                <div className="project-card-5">
+                  <div className="card">
+                      CLI
+                      <br>
+                      </br>
+                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
+                  </div>
                 </div>
-                    
-            </div>
-                
+            )
+        }
+    }
+
+    render(){
+        return(
+            //toggle catgeories and tasks(?)
+            <div className="card-tabs">
+                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
+                    <Tab>Ruby</Tab>
+                    <Tab>Sinatra</Tab>
+                    <Tab>Ruby on Rails</Tab>
+                    <Tab>JavaScript</Tab>
+                    <Tab>React / Redux</Tab>
+                </Tabs>
+                {this.toggleCategories()}
             </div>
         )
     }
@@ -76,4 +103,3 @@ class Projects extends Component {
 }
 
 export default Projects;
-//</div>browserTab={this.state.browserTab} onChange={(tabId) => this.setState({ browserTab: tabId})}>
