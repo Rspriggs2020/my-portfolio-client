@@ -21,7 +21,7 @@ class TodoForm extends Component {
         event.preventDefault();
         this.props.createTodo({project_title: this.state.project_title}, this.props.goal)
         this.setState({
-            title: ''
+            project_title: ''
         })
     }
 
