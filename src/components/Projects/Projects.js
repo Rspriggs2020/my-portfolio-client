@@ -97,6 +97,7 @@ class Projects extends Component {
             //toggle catgeories and tasks(?)
             <div className="card-tabs">
                  <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
+                     <Tab></Tab>
                     <Tab>Ruby</Tab>
                     <Tab>Sinatra</Tab>
                     <Tab>Ruby on Rails</Tab>
