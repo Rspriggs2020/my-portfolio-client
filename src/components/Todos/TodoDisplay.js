@@ -11,9 +11,9 @@ class TodoDisplay extends Component {
         })
         return (
             <div>
-                <li>
+             
                     {todoList}
-                </li>
+                
             </div>
         )
     }
