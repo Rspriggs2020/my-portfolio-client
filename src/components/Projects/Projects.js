@@ -23,7 +23,7 @@ class Projects extends Component {
           return (
               <div className="project-cards">
                   <Card>
-                      <CardTitle name="CLI"></CardTitle>
+                      <CardTitle name="Ruby"></CardTitle>
                       <CardText>
                           CLI project
                       </CardText>
@@ -35,46 +35,58 @@ class Projects extends Component {
             )
         }else if(this.state.activeTab === 2){
             return (
-                <div className="project-card-2">
-                  <div className="card">
-                      CLI
-                      <br>
-                      </br>
-                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
-                  </div>
+                <div className="project-cards">
+                    <Card>
+                      <CardTitle name="Sinatra"></CardTitle>
+                      <CardText>
+                          Sinatra project
+                      </CardText>
+                      <CardActions>
+                          <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
+                      </CardActions>
+                  </Card>
                 </div>
             )
         }else if(this.state.activeTab === 3){
             return (
-                <div className="project-card-3">
-                  <div className="card">
-                      CLI
-                      <br>
-                      </br>
-                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
-                  </div>
+                <div className="project-cards">
+                     <Card>
+                      <CardTitle name="Rails"></CardTitle>
+                      <CardText>
+                          Rails project
+                      </CardText>
+                      <CardActions>
+                          <Button href="https://github.com/Rspriggs2020/hey_anime" colored target="_blank">To Repo</Button>
+                      </CardActions>
+                  </Card>
                 </div>
             )
         }else if(this.state.activeTab === 4){
             return (
-                <div className="project-card-4">
-                  <div className="card">
-                      CLI
-                      <br>
-                      </br>
-                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
-                  </div>
+                <div className="project-cards">
+                  <Card>
+                      <CardTitle name="Ruby"></CardTitle>
+                      <CardText>
+                          JavaScript Project
+                      </CardText>
+                      <CardActions>
+                          <Button href="https://github.com/Rspriggs2020/spacedout_frontend" colored target="_blank">To Repo</Button>
+                      </CardActions>
+                  </Card>
                 </div>
             )
         }else if(this.state.activeTab === 5){
             return (
-                <div className="project-card-5">
-                  <div className="card">
-                      CLI
-                      <br>
-                      </br>
-                      <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
-                  </div>
+                <div className="project-card">
+                  <Card>
+                      <CardTitle name="React / Redux"></CardTitle>
+                      <CardText>
+                          React / Redux Project
+                      </CardText>
+                      <CardActions>
+                          <Button href="https://github.com/Rspriggs2020/my-portfolio-client" colored target="_blank">To Repo</Button>
+                      </CardActions>
+                  </Card>
                 </div>
             )
         }
