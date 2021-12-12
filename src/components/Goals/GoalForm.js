@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux'
 import { createGoal } from '../../actions/GoalActions'
+import { Button, Card } from 'semantic-ui-react';
 
 //goal input form
 class GoalForm extends Component {
@@ -43,8 +44,9 @@ class GoalForm extends Component {
                 <textarea
                 id="description"
                 value={this.state.description}
-                onChange={this.handleChange} 
-                />
+                onChange={this.handleChange} />
+                <Button type="submit">Add Goal</Button>
+               
             </form>
         )
     }

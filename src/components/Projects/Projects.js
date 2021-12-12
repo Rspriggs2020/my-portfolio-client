@@ -68,8 +68,7 @@ class Projects extends Component {
                 </div>
                     
             </div>
-                <p>project</p>
-                {this.toggleCategories}
+                
             </div>
         )
     }
