@@ -32,8 +32,9 @@ class GoalForm extends Component {
     render(){
         return (
             <form className="new-goal" onSubmit={this.handleSubmit}>
-                <label className="goal-title">Title</label>
+                <label className="goal-title" >Title</label>
                 <input
+                placeholder="Ex.) CLI, Sinatra, Rails"
                 id="title"
                 value={this.state.title}
                 onChange={(event) => this.handleChange(event)}
@@ -42,6 +43,7 @@ class GoalForm extends Component {
                 </br>
                 <label className="goal-description">Description</label>
                 <textarea
+                placeholder="Ex.) Add More Feautures"
                 id="description"
                 value={this.state.description}
                 onChange={this.handleChange} />
