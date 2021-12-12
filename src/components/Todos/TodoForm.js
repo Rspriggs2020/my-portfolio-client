@@ -30,6 +30,8 @@ class TodoForm extends Component {
             <Form className="todo-form" onSubmit={(event) => this.handleSubmit(event)}>
                 <Form.Field>
                     <label className="todo-title">Future Plans:</label>
+                    <br></br>
+                    <br></br>
                     <input
                         placeholder="Ex.) Expand, Redesign."
                         id="project_title"
@@ -37,6 +39,7 @@ class TodoForm extends Component {
                         onChange={(event) => this.handleChange(event)}
                     />
                 </Form.Field>
+                <br></br>
                 <Button type="submit" value="submit">Add</Button>
             </Form>
         )

@@ -5,8 +5,8 @@ const Todo = ({ todo, deleteTodo, goal }) => {
     return(
         <Card>
             {todo.project_title}
-            <br>
-            </br>
+            <br></br>
+            <br></br>
             <Button onClick={() => deleteTodo(todo, goal)}>Delete Todo</Button>
         </Card>
     )

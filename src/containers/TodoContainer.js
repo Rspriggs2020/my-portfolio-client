@@ -14,7 +14,8 @@ class TodoContainer extends Component {
         return(
             <div>
                 <TodoForm goal={this.props.goal} />
-                <h1>What I plan To Do:</h1>
+                <br></br>
+                <br></br>
                 <TodoDisplay 
                 goal={this.props.goal}
                 key={this.props.goal.id}

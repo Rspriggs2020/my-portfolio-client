@@ -15,14 +15,15 @@ class Goal extends Component {
         const { goal }  = this.props
         return (
             <div className='goals'>
-        
                 Goal: {goal.title}
                 <br></br>
+                <br></br>
                 Description: {goal.description}
-                <br>
-                </br>
+                <br></br>
+                <br></br>
                 <Button onClick={ () => this.handleClick() }>Delete Goal</Button>
-                
+                <br></br>
+                <br></br>
                 <TodoContainer goal={goal} />
                 
             </div>
