@@ -69,4 +69,11 @@ body {
   color: salmon;
 }
 
+.post {
+  text-align: center;
+  padding-top: 70pt;
+  padding-bottom: 20pt;
+  font-size: 30pt;
+}
+
 

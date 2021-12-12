@@ -14,9 +14,11 @@ const BlogPosts = () => {
                 Phase 2: My first MVC app
             </Button>
             </div>
+            <div className="post">
             <Button href="https://dev.to/soiymiilk/let-s-build-a-rails-app-5hb7">
                 Phase 3: Let's Build a Rails App!
             </Button>
+            </div>
             <div className="post">
             <Button href="https://dev.to/soiymiilk/javascript-to-the-stars-2gen">
                 Phase 4: Javascript to The Stars
