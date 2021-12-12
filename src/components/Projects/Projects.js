@@ -27,17 +27,11 @@ class Projects extends Component {
                       <CardText>
                           CLI project
                       </CardText>
-                      <CardActions border>
+                      <CardActions>
                           <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
                       </CardActions>
                   </Card>
-                <div className="card">
-                    CLI
-                    <br>
-                    </br>
-                    <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
                 </div>
-              </div>
             )
         }else if(this.state.activeTab === 2){
             return (
