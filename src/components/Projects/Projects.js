@@ -22,10 +22,10 @@ class Projects extends Component {
         }else if(this.state.activeTab === 1){
           return (
               <div className="project-cards">
-                  <Card>
+                  <Card style={{margin: 'auto', width: '600px'}}>
                       <CardTitle name="Ruby"></CardTitle>
                       <CardText>
-                          CLI project
+                          CLI Project
                       </CardText>
                       <CardActions>
                           <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
@@ -39,7 +39,7 @@ class Projects extends Component {
                     <Card>
                       <CardTitle name="Sinatra"></CardTitle>
                       <CardText>
-                          Sinatra project
+                          Sinatra Project
                       </CardText>
                       <CardActions>
                           <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
@@ -53,7 +53,7 @@ class Projects extends Component {
                      <Card>
                       <CardTitle name="Rails"></CardTitle>
                       <CardText>
-                          Rails project
+                          Rails Project
                       </CardText>
                       <CardActions>
                           <Button href="https://github.com/Rspriggs2020/hey_anime" colored target="_blank">To Repo</Button>
@@ -97,7 +97,7 @@ class Projects extends Component {
             //toggle catgeories and tasks(?)
             <div className="card-tabs">
                  <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
-                     <Tab></Tab>
+                     <Tab className='tabs'></Tab>
                     <Tab>Ruby</Tab>
                     <Tab>Sinatra</Tab>
                     <Tab>Ruby on Rails</Tab>
