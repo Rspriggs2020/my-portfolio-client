@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux'
 import { createGoal } from '../../actions/GoalActions'
-import { Button, Card } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 
 //goal input form
 class GoalForm extends Component {

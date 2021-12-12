@@ -1,6 +1,5 @@
 import React from "react";
-import { CardText } from 'react-mdl';
-import { Button } from "semantic-ui-react";
+
 const About = () => {
     return(
         <div className="About">

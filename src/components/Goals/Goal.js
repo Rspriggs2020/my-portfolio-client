@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteGoal } from '../../actions/GoalActions'
 import { Button } from 'react-bootstrap';
-import { Card } from 'react-mdl';
 import TodoContainer from '../../containers/TodoContainer'
 //display goal.id
 

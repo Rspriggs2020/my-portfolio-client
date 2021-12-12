@@ -4,7 +4,7 @@ import TodoDisplay from '../components/Todos/TodoDisplay'
 import TodoForm from '../components/Todos/TodoForm'
 import { fetchGoalId } from '../actions/GoalActions'
 import { deleteTodo } from '../actions/TodoActions'
-import Todo from '../components/Todos/Todo'
+
 class TodoContainer extends Component {
 
     componentDidMount() {
