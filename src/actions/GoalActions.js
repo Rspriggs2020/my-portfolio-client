@@ -1,6 +1,6 @@
 export const fetchGoals = () => {
     return dispatch => {
-        fetch('http://localhost:3000/goals') 
+        fetch("http://localhost:3000/goals") 
         .then(res => res.json())
         .then(goals => dispatch({
             type: 'FETCH_GOALS',

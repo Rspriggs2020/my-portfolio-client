@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteGoal } from '../../actions/GoalActions'
 import { Button } from 'react-bootstrap';
-import { Card, Grid } from 'react-mdl';
+import { Card } from 'react-mdl';
 import TodoContainer from '../../containers/TodoContainer'
 //display goal.id
+
 class Goal extends Component {
 
     handleClick() {
@@ -14,20 +15,23 @@ class Goal extends Component {
     render() {
         const { goal }  = this.props
         return (
+            <div>
             <Card>
-                <Card.Content>
+
                 <h1>Goal: {goal.title}</h1>
                 <br>
-                    Description: {goal.description}
                 </br>
-                <Button onClick={ () => this.handleClick() }>Delete Goal</Button>
-                </Card.Content>
+                <h2>Description: {goal.description}</h2>
                 <br>
                 </br>
-                <Card.Content extra>
+            
+                <Button onClick={ () => this.handleClick() }>Delete Goal</Button>
+                
+               
                     <TodoContainer goal={goal} />
-                </Card.Content>
+                
             </Card>
+            </div>
         )
 
     }

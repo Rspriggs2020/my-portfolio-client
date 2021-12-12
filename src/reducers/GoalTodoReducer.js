@@ -5,8 +5,6 @@ export default function goalTodoReducer(state = {
     switch(action.type){
         case 'CREATE_GOAL':
             return {...state, goals:[...state.goals, action.payload]}
-        //case 'GET_GOALS':
-          //  return {...state, loading: true}
         case 'FETCH_GOALS':
             return {...state, loading: false, goals: action.payload}
         case 'DELETE_GOAL':
