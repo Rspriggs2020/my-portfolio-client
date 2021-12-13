@@ -88,6 +88,7 @@ body {
   display: inline-block;
   padding-right: 5pt;
   font-size: 20pt;
+  color: #ff66d9;
 
 }
 .project-cards {
@@ -97,12 +98,13 @@ body {
 .new-goal {
   padding-top: 20pt;
   font-size: 20pt;
+  color: #ff66d9;
 }
 
 .todo-title {
   padding-top: 20;
   font-size: 20pt;
-
+  color: #ff66d9;
 }
 
 input { 
@@ -124,6 +126,19 @@ textarea {
   resize: none;
 }
 
+img {
+  position: center;
+}
+
+.home-info {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  text-align: center;
+  padding-left: 50pt;
+  padding-right: 50pt;
+  padding-top: 50pt;
+  color:sandybrown;
+}
 
 
 
