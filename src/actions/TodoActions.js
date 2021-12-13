@@ -1,5 +1,3 @@
-//add toto
-
 export const createTodo = (todo, goal ) => {
     let data = {
         method: 'POST',
@@ -10,7 +8,7 @@ export const createTodo = (todo, goal ) => {
         body: JSON.stringify(todo)
     }
     return dispatch => {
-        fetch(`http://localhost:3000/goals/${goal.id}/todos`, data)  //fetch request route, data
+        fetch(`http://localhost:3000/goals/${goal.id}/todos`, data)  
         .then(res => res.json())
         .then(todo => {
             let result = {todo, goal}
@@ -23,8 +21,6 @@ export const createTodo = (todo, goal ) => {
 
 }
 
-//delete todo
-
 export const deleteTodo = ( todo, goal) => {
     let data = {
         method: 'DELETE',
@@ -35,7 +31,7 @@ export const deleteTodo = ( todo, goal) => {
         body: JSON.stringify(todo)
     }
     return dispatch => {
-        fetch(`http://localhost:3000/goals/${goal.id}/todos/${todo.id}`, data)  //fetch request route, data
+        fetch(`http://localhost:3000/goals/${goal.id}/todos/${todo.id}`, data)  
         .then(res => res.json())
         .then(todo => {
             let result = {todo, goal}

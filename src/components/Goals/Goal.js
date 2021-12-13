@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { deleteGoal } from '../../actions/GoalActions'
 import { Button } from 'react-bootstrap';
 import TodoContainer from '../../containers/TodoContainer'
-//display goal.id
 
 class Goal extends Component {
 

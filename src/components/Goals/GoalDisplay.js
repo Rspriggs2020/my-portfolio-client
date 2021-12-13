@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Goal from './Goal'
-//display goal list
+
 class GoalDisplay extends Component {
     render() {
 

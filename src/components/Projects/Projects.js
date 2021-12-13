@@ -96,7 +96,6 @@ class Projects extends Component {
 
     render(){
         return(
-            //toggle catgeories and tasks(?)
             <div className="card-tabs">
                  <Tabs style={{size: '40pt'}}activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
                      <Tab className='tabs'></Tab>

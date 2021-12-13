@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import { createGoal } from '../../actions/GoalActions'
 import { Button } from 'semantic-ui-react';
 
-//goal input form
 class GoalForm extends Component {
     constructor() {
         super();

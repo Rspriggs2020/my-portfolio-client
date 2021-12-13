@@ -10,11 +10,9 @@ export const fetchGoals = () => {
 
 }
 
-//get goal
-
 export const fetchGoalId = id => {
     return dispatch => {
-        fetch(`http://localhost:3000/goals/${id}`) ///-->`/api/goals/${id}
+        fetch(`http://localhost:3000/goals/${id}`) 
         .then(res => res.json())
         .then(goal => dispatch({
             type: 'FETCH_GOAL',
@@ -22,9 +20,8 @@ export const fetchGoalId = id => {
         }))
     }
 }
-//get id
 
-export const createGoal = (goalInput) => {  //post 
+export const createGoal = (goalInput) => { 
     let data = {
         method: 'POST',
         headers: {
@@ -43,9 +40,7 @@ export const createGoal = (goalInput) => {  //post
     }
 }
 
-//create goal
-
-export const deleteGoal = (id) => { //destroy
+export const deleteGoal = (id) => { 
     let data = {
         method: 'DELETE',
         headers: {
@@ -63,4 +58,4 @@ export const deleteGoal = (id) => { //destroy
     }
 }
 
-//delete goalwith id
+
