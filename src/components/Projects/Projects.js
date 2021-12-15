@@ -38,11 +38,17 @@ class Projects extends Component {
         }else if(this.state.activeTab === 2){
             return (
                 <div className="project-cards">
-                    <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
+                    <Card style={{margin: 'auto', width: '600px', height: '400px', backgroundImage: "url(https://wpmayor.com/wp-content/uploads/2015/08/sinatra-easy-ruby-web-application-dsl-creating-plugin.jpg)"}}>
                       <CardTitle name="Sinatra"></CardTitle>
                       <CardText style={{fontSize: '40pt', color: 'black'}}>
                           Sinatra Project
                       </CardText>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <br></br>
                       <CardActions>
                           <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
                       </CardActions>
@@ -52,11 +58,13 @@ class Projects extends Component {
         }else if(this.state.activeTab === 3){
             return (
                 <div className="project-cards">
-                     <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
+                     <Card style={{margin: 'auto', width: '600px', height: '400px', backgroundImage: "url(https://static-cdn.imageservice.cloud/6860973/goped-engine-rebuild.jpg)"}}>
                       <CardTitle name="Rails"></CardTitle>
                       <CardText style={{fontSize: '40pt', color: 'black'}}>
                           Rails Project
                       </CardText>
+                      <br>
+                      </br>
                       <CardActions>
                           <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/hey_anime" colored target="_blank">To Repo</Button>
                       </CardActions>
@@ -66,11 +74,13 @@ class Projects extends Component {
         }else if(this.state.activeTab === 4){
             return (
                 <div className="project-cards">
-                  <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
+                  <Card style={{margin: 'auto', width: '600px', height: '400px', backgroundImage: 'url(https://library.kissclipart.com/20181128/tsw/kissclipart-orange-clipart-ecmascript-javascript-ecma-internat-3885764678295034.png)'}}>
                       <CardTitle name="Ruby"></CardTitle>
                       <CardText style={{fontSize: '40pt', color: 'black'}}>
                           JavaScript Project
                       </CardText>
+                      <br>
+                      </br>
                       <CardActions>
                           <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/spacedout_frontend" colored target="_blank">To Repo</Button>
                       </CardActions>
@@ -80,11 +90,13 @@ class Projects extends Component {
         }else if(this.state.activeTab === 5){
             return (
                 <div className="project-card">
-                  <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
+                  <Card style={{margin: 'auto', width: '600px', height: '400px', backgroundImage: "url(https://cdn.freelogovectors.net/wp-content/uploads/2018/12/react_logo.png)"}}>
                       <CardTitle name="React / Redux"></CardTitle>
                       <CardText style={{fontSize: '40pt', color: 'black'}}>
                           React / Redux Project
                       </CardText>
+                      <br>
+                      </br>
                       <CardActions>
                           <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/my-portfolio-client" colored target="_blank">To Repo</Button>
                       </CardActions>
