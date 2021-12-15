@@ -22,9 +22,9 @@ class Projects extends Component {
         }else if(this.state.activeTab === 1){
           return (
               <div className="project-cards">
-                  <Card style={{margin: 'auto', width: '600px', height: '600px', background:"url(https://www.nicepng.com/png/detail/749-7492440_ruby-on-rails-logo.png)"}} >
+                  <Card style={{margin: 'auto', width: '600px', height: '400px', background:"url(https://www.nicepng.com/png/detail/749-7492440_ruby-on-rails-logo.png)"}} >
                       <CardTitle name="Ruby"></CardTitle>
-                      <CardText style={{fontSize: '40pt'}}>
+                      <CardText style={{fontSize: '40pt', color: 'black'}}>
                           CLI Project
                       </CardText>
                       <br>
@@ -38,7 +38,7 @@ class Projects extends Component {
         }else if(this.state.activeTab === 2){
             return (
                 <div className="project-cards">
-                    <Card>
+                    <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
                       <CardTitle name="Sinatra"></CardTitle>
                       <CardText>
                           Sinatra Project
@@ -52,7 +52,7 @@ class Projects extends Component {
         }else if(this.state.activeTab === 3){
             return (
                 <div className="project-cards">
-                     <Card>
+                     <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
                       <CardTitle name="Rails"></CardTitle>
                       <CardText>
                           Rails Project
@@ -66,7 +66,7 @@ class Projects extends Component {
         }else if(this.state.activeTab === 4){
             return (
                 <div className="project-cards">
-                  <Card>
+                  <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
                       <CardTitle name="Ruby"></CardTitle>
                       <CardText>
                           JavaScript Project
@@ -80,7 +80,7 @@ class Projects extends Component {
         }else if(this.state.activeTab === 5){
             return (
                 <div className="project-card">
-                  <Card>
+                  <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
                       <CardTitle name="React / Redux"></CardTitle>
                       <CardText>
                           React / Redux Project
