@@ -3,7 +3,7 @@ import { Button } from 'semantic-ui-react';
 import GoalsContainer from '../../containers/GoalContainer'
 import 'react-mdl/extra/material.css';   
 import 'react-mdl/extra/material.js';
-import { Card, CardActions, CardText, CardTitle, Tab, Tabs  } from 'react-mdl';
+import { Card, CardActions, CardMedia, CardText, CardTitle, Tab, Tabs  } from 'react-mdl';
 
 class Projects extends Component {
     constructor(props){
@@ -22,7 +22,7 @@ class Projects extends Component {
         }else if(this.state.activeTab === 1){
           return (
               <div className="project-cards">
-                  <Card style={{margin: 'auto', width: '600px', height: '400px', background:"url(https://www.nicepng.com/png/detail/749-7492440_ruby-on-rails-logo.png)"}} >
+                  <Card style={{margin: 'auto', width: '600px', height: '400px', backgroundImage: "url(https://pragmaticstudio.com/assets/courses/ruby/ruby-large-b84b4e30be190f8804452a81002eff963540d3d30f53ea92222afca2c20a081a.png)"}} >
                       <CardTitle name="Ruby"></CardTitle>
                       <CardText style={{fontSize: '40pt', color: 'black'}}>
                           CLI Project
