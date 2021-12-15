@@ -22,7 +22,7 @@ class Projects extends Component {
         }else if(this.state.activeTab === 1){
           return (
               <div className="project-cards">
-                  <Card style={{margin: 'auto', width: '600px', height: '400px', backgroundImage: "url(https://pragmaticstudio.com/assets/courses/ruby/ruby-large-b84b4e30be190f8804452a81002eff963540d3d30f53ea92222afca2c20a081a.png)"}} >
+                  <Card style={{ margin: 'auto', width: '600px', height: '400px', position: 'center', backgroundImage: "url(https://pragmaticstudio.com/assets/courses/ruby/ruby-large-b84b4e30be190f8804452a81002eff963540d3d30f53ea92222afca2c20a081a.png)"}} >
                       <CardTitle name="Ruby"></CardTitle>
                       <CardText style={{fontSize: '40pt', color: 'black'}}>
                           CLI Project
@@ -30,7 +30,7 @@ class Projects extends Component {
                       <br>
                       </br>
                       <CardActions >
-                          <Button style={{color: '#9966ff'}} href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
+                          <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
                       </CardActions>
                   </Card>
                 </div>
@@ -40,11 +40,11 @@ class Projects extends Component {
                 <div className="project-cards">
                     <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
                       <CardTitle name="Sinatra"></CardTitle>
-                      <CardText>
+                      <CardText style={{fontSize: '40pt', color: 'black'}}>
                           Sinatra Project
                       </CardText>
                       <CardActions>
-                          <Button href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
+                          <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
                       </CardActions>
                   </Card>
                 </div>
@@ -54,11 +54,11 @@ class Projects extends Component {
                 <div className="project-cards">
                      <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
                       <CardTitle name="Rails"></CardTitle>
-                      <CardText>
+                      <CardText style={{fontSize: '40pt', color: 'black'}}>
                           Rails Project
                       </CardText>
                       <CardActions>
-                          <Button href="https://github.com/Rspriggs2020/hey_anime" colored target="_blank">To Repo</Button>
+                          <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/hey_anime" colored target="_blank">To Repo</Button>
                       </CardActions>
                   </Card>
                 </div>
@@ -68,11 +68,11 @@ class Projects extends Component {
                 <div className="project-cards">
                   <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
                       <CardTitle name="Ruby"></CardTitle>
-                      <CardText>
+                      <CardText style={{fontSize: '40pt', color: 'black'}}>
                           JavaScript Project
                       </CardText>
                       <CardActions>
-                          <Button href="https://github.com/Rspriggs2020/spacedout_frontend" colored target="_blank">To Repo</Button>
+                          <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/spacedout_frontend" colored target="_blank">To Repo</Button>
                       </CardActions>
                   </Card>
                 </div>
@@ -82,11 +82,11 @@ class Projects extends Component {
                 <div className="project-card">
                   <Card style={{margin: 'auto', width: '600px', height: '400px'}}>
                       <CardTitle name="React / Redux"></CardTitle>
-                      <CardText>
+                      <CardText style={{fontSize: '40pt', color: 'black'}}>
                           React / Redux Project
                       </CardText>
                       <CardActions>
-                          <Button href="https://github.com/Rspriggs2020/my-portfolio-client" colored target="_blank">To Repo</Button>
+                          <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/my-portfolio-client" colored target="_blank">To Repo</Button>
                       </CardActions>
                   </Card>
                 </div>
