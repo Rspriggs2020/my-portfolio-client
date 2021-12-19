@@ -1,4 +1,5 @@
 import React from "react";
+import myImage from "../images/myImage.png"
 
 const Home = () => {
     return (
@@ -12,6 +13,8 @@ const Home = () => {
                 <br></br>
                 Cheers Flatiron!
            </p>
+           <br></br>
+           <img src={myImage} alt="profile"></img>
            </div>
        </div>
        </body>
