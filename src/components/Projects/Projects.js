@@ -58,7 +58,7 @@ class Projects extends Component {
         }else if(this.state.activeTab === 3){
             return (
                 <div className="project-cards">
-                     <Card style={{margin: 'auto', width: '600px', height: '400px', backgroundImage: "url(https://static-cdn.imageservice.cloud/6860973/goped-engine-rebuild.jpg)"}}>
+                     <Card style={{margin: 'auto', width: '600px', height: '400px', backgroundImage: "url(https://avatars.githubusercontent.com/u/4223)"}}>
                       <CardTitle name="Rails"></CardTitle>
                       <CardText style={{fontSize: '40pt', color: 'black'}}>
                           Rails Project
@@ -109,13 +109,13 @@ class Projects extends Component {
     render(){
         return(
             <div className="card-tabs">
-                 <Tabs style={{size: '40pt'}}activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
+                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
                      <Tab className='tabs'></Tab>
-                    <Tab>Ruby</Tab>
-                    <Tab>Sinatra</Tab>
-                    <Tab>Ruby on Rails</Tab>
-                    <Tab>JavaScript</Tab>
-                    <Tab>React / Redux</Tab>
+                    <Tab style={{fontSize: '20pt'}}>Ruby</Tab>
+                    <Tab style={{fontSize: '20pt'}}>Sinatra</Tab>
+                    <Tab style={{fontSize: '20pt'}}>Ruby on Rails</Tab>
+                    <Tab style={{fontSize: '20pt'}}>JavaScript</Tab>
+                    <Tab style={{fontSize: '20pt'}}>React</Tab>
                 </Tabs>
 
                 {this.toggle()}
