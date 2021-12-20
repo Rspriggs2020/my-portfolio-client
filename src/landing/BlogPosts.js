@@ -25,8 +25,8 @@ const BlogPosts = () => {
             </Button>
             </div>
             <div className="post">
-            <Button href="https://dev.to/soiymiilk/phase-1-coding-for-the-future-5gi0">
-                Phase 5: Coding For the Future
+            <Button href="https://dev.to/soiymiilk/my-reaction-1ade">
+                Phase 5: My React(ion)
             </Button>
             </div>
         </div>

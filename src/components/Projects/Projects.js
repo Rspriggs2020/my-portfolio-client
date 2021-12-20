@@ -3,15 +3,16 @@ import { Button } from 'semantic-ui-react';
 import GoalsContainer from '../../containers/GoalContainer'
 import 'react-mdl/extra/material.css';   
 import 'react-mdl/extra/material.js';
-import { Card, CardActions, CardMedia, CardText, CardTitle, Tab, Tabs  } from 'react-mdl';
+import { Card, CardActions, CardText, CardTitle, Tab, Tabs  } from 'react-mdl';
 
 class Projects extends Component {
     constructor(props){
         super(props);
         this.state = {
-            activeTab: 0
+            activeTab: 0,
         }
     }
+
     toggle(){
         if(this.state.activeTab === 0){
           return(
@@ -33,6 +34,7 @@ class Projects extends Component {
                           <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
                       </CardActions>
                   </Card>
+                  <GoalsContainer />
                 </div>
             )
         }else if(this.state.activeTab === 2){
@@ -53,6 +55,7 @@ class Projects extends Component {
                           <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/final_fantasy_cli" colored target="_blank">To Repo</Button>
                       </CardActions>
                   </Card>
+                  <GoalsContainer />
                 </div>
             )
         }else if(this.state.activeTab === 3){
@@ -69,6 +72,7 @@ class Projects extends Component {
                           <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/hey_anime" colored target="_blank">To Repo</Button>
                       </CardActions>
                   </Card>
+                  <GoalsContainer />
                 </div>
             )
         }else if(this.state.activeTab === 4){
@@ -85,6 +89,7 @@ class Projects extends Component {
                           <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/spacedout_frontend" colored target="_blank">To Repo</Button>
                       </CardActions>
                   </Card>
+                  <GoalsContainer />
                 </div>
             )
         }else if(this.state.activeTab === 5){
@@ -101,6 +106,7 @@ class Projects extends Component {
                           <Button style={{color: 'black', fontSize: '30pt'}} href="https://github.com/Rspriggs2020/my-portfolio-client" colored target="_blank">To Repo</Button>
                       </CardActions>
                   </Card>
+                  <GoalsContainer />
                 </div>
             )
         }

@@ -144,6 +144,14 @@ Card {
   padding-top: 30pt;
 }
 
+.likeBtn {
+  height: 38px;
+  padding: 0 30px;
+  font-size: 11px;
+  background-color: blue;
+  border-radius: 6px;
+}
+
 
 
 

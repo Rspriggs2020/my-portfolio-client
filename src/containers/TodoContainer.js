@@ -21,7 +21,7 @@ class TodoContainer extends Component {
                 key={this.props.goal.id}
                 todos={this.props.goal.todos}
                 deleteTodo={this.props.deleteTodo}
-                goal={this.props.goal}
+                //goal={this.props.goal}
                 />
                 
             </div>
