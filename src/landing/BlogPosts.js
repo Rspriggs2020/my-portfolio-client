@@ -5,6 +5,7 @@ class BlogPosts extends Component {
     state = {
         findPhase: 'all'
     }
+
     handleChange = (e) => {
         if(e.target.value === "1"){
             this.setState({
@@ -36,16 +37,29 @@ class BlogPosts extends Component {
     render (){
         if(this.state.findPhase !== 'all'){
             return(
-                <div className="post">
+                <div>
+                <br></br>
+                <select onChange={this.handleChange}>
+                <option value="all">All</option>
+                <option value="1">Phase 1</option>
+                <option value="2">Phase 2</option>
+                <option value="3">Phase 3</option>
+                <option value="4">Phase 4</option>
+                <option value="5">Phase 5</option>
+            </select>
+            <br></br>
+            <br></br>
             <Button href={this.state.findPhase}>
-                Phase 1: Coding For the Future
+                {this.state.findPhase}
             </Button>
             </div>
+            
             )
         }
     return(
         <div className="Blog">
-            <select name="dropdown" onChange={this.handleChange}>
+            <br></br>
+            <select onChange={this.handleChange}>
                 <option value="all">All</option>
                 <option value="1">Phase 1</option>
                 <option value="2">Phase 2</option>
@@ -54,8 +68,8 @@ class BlogPosts extends Component {
                 <option value="5">Phase 5</option>
             </select>
             <div className="post">
-            <Button href="https://dev.to/soiymiilk/phase-1-coding-for-the-future-5gi0">
-                <label>Phase 1: Coding For the Future</label>
+            <Button id="1" href="https://dev.to/soiymiilk/phase-1-coding-for-the-future-5gi0">
+                Phase 1: Coding For the Future
             </Button>
             </div>
             <div className="post">
