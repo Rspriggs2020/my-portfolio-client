@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Goal from './Goal'
 
 class GoalDisplay extends Component {
-    
     render() {
 
         const { goals } = this.props
@@ -20,7 +19,7 @@ class GoalDisplay extends Component {
             
         )
 
-    }
+    }   
 }
 
 export default GoalDisplay;

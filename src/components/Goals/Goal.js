@@ -6,6 +6,8 @@ import TodoContainer from '../../containers/TodoContainer'
 
 class Goal extends Component {
 
+    
+
     handleClick() {
         this.props.deleteGoal(this.props.goal.id)
     }

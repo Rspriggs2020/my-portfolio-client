@@ -6,6 +6,7 @@ export default function goalTodoReducer(state = {
         case 'CREATE_GOAL':
             return {...state, goals:[...state.goals, action.payload]}
         case 'FETCH_GOALS':
+            console.log("f")
             return {...state, loading: false, goals: action.payload}
         case 'DELETE_GOAL':
             return{...state, loading: false, goals: state.goals.filter(goal => goal.id !== action.payload.id)}

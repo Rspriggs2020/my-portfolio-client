@@ -8,7 +8,9 @@ import { fetchGoals } from '../actions/GoalActions'
 class GoalContainer extends Component {
 
     componentDidMount(){
+        console.log("a")
         this.props.fetchGoals()
+        console.log("b")
     }
 
     render(){
